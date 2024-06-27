@@ -1,0 +1,192 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="https://jakarta.ee/xml/ns/jakartaee" xmlns:web="http://xmlns.jcp.org/xml/ns/javaee" xsi:schemaLocation="https://jakarta.ee/xml/ns/jakartaee https://jakarta.ee/xml/ns/jakartaee/web-app_5_0.xsd http://xmlns.jcp.org/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd" id="WebApp_ID" version="5.0">
+  <display-name>A1</display-name>
+  <welcome-file-list>
+    <welcome-file>SignUp.jsp</welcome-file>
+  </welcome-file-list>
+  
+  <servlet>
+    <servlet-name>RegisterController</servlet-name>
+    <servlet-class>controller.RegisterController</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>RegisterController</servlet-name>
+    <url-pattern>/RegisterController</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+    <description></description>
+    <display-name>LoginController</display-name>
+    <servlet-name>LoginController</servlet-name>
+    <servlet-class>controller.LoginController</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>LoginController</servlet-name>
+    <url-pattern>/LoginController</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+    <description></description>
+    <servlet-name>AddProductController</servlet-name>
+    <servlet-class>controller.AddProductController</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>AddProductController</servlet-name>
+    <url-pattern>/AddProductController</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+    <description></description>
+    <servlet-name>ListSuppController</servlet-name>
+    <servlet-class>controller.ListSuppController</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>ListSuppController</servlet-name>
+    <url-pattern>/ListSuppController</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+    <description></description>
+    <display-name>SuppListController</display-name>
+    <servlet-name>SuppListController</servlet-name>
+    <servlet-class>controller.SuppListController</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>SuppListController</servlet-name>
+    <url-pattern>/SuppListController</url-pattern>
+  </servlet-mapping>
+
+  <servlet>
+    <description></description>
+    <servlet-name>ListProductController</servlet-name>
+    <servlet-class>controller.ListProductController</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>ListProductController</servlet-name>
+    <url-pattern>/ListProductController</url-pattern>
+  </servlet-mapping>
+
+  <servlet>
+    <description></description>
+    <servlet-name>UpdateProductController</servlet-name>
+    <servlet-class>controller.UpdateProductController</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>UpdateProductController</servlet-name>
+    <url-pattern>/UpdateProductController</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+    <description></description>
+    <servlet-name>DeleteProductController</servlet-name>
+    <servlet-class>controller.DeleteProductController</servlet-class>
+  </servlet>
+
+  <servlet>
+    <description></description>
+    <display-name>AddImage</display-name>
+    <servlet-name>AddImage</servlet-name>
+    <servlet-class>controller.AddImage</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>AddImage</servlet-name>
+    <url-pattern>/AddImage</url-pattern>
+  </servlet-mapping>
+
+  <servlet>
+    <description></description>
+    <servlet-name>ListDeliveryController</servlet-name>
+    <servlet-class>controller.ListDeliveryController</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>ListDeliveryController</servlet-name>
+    <url-pattern>/ListDeliveryController</url-pattern>
+  </servlet-mapping>
+
+  <servlet>
+    <description></description>
+    <servlet-name>UpdateDeliveryController</servlet-name>
+    <servlet-class>controller.UpdateDeliveryController</servlet-class>
+  </servlet>
+
+  <servlet>
+    <description></description>
+    <servlet-name>ViewProductController</servlet-name>
+    <servlet-class>controller.ViewProductController</servlet-class>
+  </servlet>
+
+  <servlet>
+    <description></description>
+    <display-name>AddInvoiceController</display-name>
+    <servlet-name>AddInvoiceController</servlet-name>
+    <servlet-class>controller.AddInvoiceController</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>AddInvoiceController</servlet-name>
+    <url-pattern>/AddInvoiceController</url-pattern>
+  </servlet-mapping>
+
+  <servlet>
+    <description></description>
+    <display-name>ListInvoiceController</display-name>
+    <servlet-name>ListInvoiceController</servlet-name>
+    <servlet-class>controller.ListInvoiceController</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>ListInvoiceController</servlet-name>
+    <url-pattern>/ListInvoiceController</url-pattern>
+  </servlet-mapping>
+
+  <servlet>
+    <description></description>
+    <display-name>AddDeliveryController</display-name>
+    <servlet-name>AddDeliveryController</servlet-name>
+    <servlet-class>controller.AddDeliveryController</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>AddDeliveryController</servlet-name>
+    <url-pattern>/AddDeliveryController</url-pattern>
+  </servlet-mapping>
+
+  <servlet>
+    <description></description>
+    <display-name>PagetextController</display-name>
+    <servlet-name>PagetextController</servlet-name>
+    <servlet-class>controller.PagetextController</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>PagetextController</servlet-name>
+    <url-pattern>/PagetextController</url-pattern>
+  </servlet-mapping>
+
+  <servlet>
+    <description></description>
+    <display-name>ListPromoController</display-name>
+    <servlet-name>ListPromoController</servlet-name>
+    <servlet-class>controller.ListPromoController</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>ListPromoController</servlet-name>
+    <url-pattern>/ListPromoController</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+    <description></description>
+    <servlet-name>AddToCartController</servlet-name>
+    <servlet-class>controller.AddToCartController</servlet-class>
+  </servlet>
+  
+  <servlet>
+    <description></description>
+    <servlet-name>DeleteFromCartController</servlet-name>
+    <servlet-class>controller.DeleteFromCartController</servlet-class>
+  </servlet>
+
+  <servlet>
+    <description></description>
+    <servlet-name>GetDeliveryStatusController</servlet-name>
+    <servlet-class>controller.GetDeliveryStatusController</servlet-class>
+  </servlet>
+
+
+</web-app>

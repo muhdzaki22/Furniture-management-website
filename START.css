@@ -1,0 +1,167 @@
+@property --d {
+  syntax: "<angle>";
+  inherits: true;
+  initial-value: 0deg;
+}
+
+body {
+  background-image: url(https://images.unsplash.com/photo-1532024802178-20dbc87a312a?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8bWluaW1hbCUyMGRhcmt8ZW58MHx8MHx8fDA%3D&w=1000&q=80);
+}
+
+h1 {
+  display: flex;
+  position: absolute;
+  justify-content: center;
+  align-items: top;
+  color: #484848;
+  font-size: 70px;
+  font-weight: bold;
+  font-family: amarillo;
+  letter-spacing: 7px;
+  cursor: pointer;
+  left: 542px;
+}
+
+h1 span {
+  transition: .5s linear
+}
+
+h1:hover span:nth-child(1) {
+  margin-right: 5px
+}
+
+h1:hover span:nth-child(2) {
+  margin-left: 30px
+}
+
+h1:hover span {
+  color: #fff;
+  text-shadow: 0 0 10px #008B8B,
+    0 0 20px #008B8B,
+    0 0 40px #008B8B;
+}
+
+button {
+
+  margin: 40px;
+  width: 300px;
+  height: 50px;
+  font-size: 30px;
+  color: #fff;
+  background: none;
+  border: none;
+  border-radius: 20px;
+  position: relative;
+  left: 307px;
+  top: 295px;
+  z-index: 0;
+  transition: 0.3s;
+
+
+}
+
+button:before {
+  content: "";
+  position: absolute;
+  inset: -8px;
+  padding: 8px;
+  border-radius: 28px;
+  -webkit-mask: linear-gradient(#000 0 0) content-box, linear-gradient(#000 0 0);
+  -webkit-mask-composite: xor;
+  mask-composite: intersect;
+
+}
+
+
+.btn1:before {
+  background: conic-gradient(from var(--d, 0deg),
+      #0325bf,
+      #0000 30deg 120deg,
+      #339779 150deg 180deg,
+      #0000 210deg 300deg,
+      #0325bf 330deg);
+}
+
+.btn2:before {
+  background: conic-gradient(from var(--d, 0deg),
+      #fc1919,
+      #0000 30deg 120deg,
+      #f6b431 150deg 180deg,
+      #0000 210deg 300deg,
+      #fc1919 330deg);
+}
+
+.btn1:after {
+  content: "";
+  position: absolute;
+  inset: -100px;
+  background: radial-gradient(80px at left 150px top 120px, #0325bf 98%, #0000),
+    radial-gradient(80px at right 150px bottom 120px, #339779 98%, #0000);
+  filter: blur(60px);
+  opacity: 0.5;
+  cursor: pointer;
+}
+
+.btn2:after {
+  content: "";
+  position: absolute;
+  inset: -100px;
+  background: radial-gradient(80px at left 150px top 120px, #fc1919 98%, #0000),
+    radial-gradient(80px at right 150px bottom 120px, #f6b431 98%, #0000);
+
+  filter: blur(60px);
+  opacity: 0.5;
+  cursor: pointer;
+}
+
+
+.btn1:before,
+.btn1:after {
+  transition: 0.5s, 99999s 99999s transform, 99999s 99999s --d;
+}
+
+.btn1:hover {
+  box-shadow: 0 0 0 1px #666;
+  letter-spacing: 5px;
+}
+
+.btn1:hover:after {
+  transform: rotate(3600deg);
+  transition: 0.5s, 60s linear transform;
+}
+
+.btn1:hover:before {
+  --d: 3600deg;
+  transition: 0.5s, 60s linear --d;
+}
+
+.btn1:hover:before {
+  background-color: #222;
+
+}
+
+.btn2:hover {
+  box-shadow: 0 0 0 1px #666;
+  letter-spacing: 5px;
+}
+
+.btn2:before,
+.btn2:after {
+  transition: 0.5s, 99999s 99999s transform, 99999s 99999s --d;
+}
+
+
+.btn2:hover:after {
+  transform: rotate(3600deg);
+  transition: 0.5s, 60s linear transform;
+}
+
+.btn2:hover:before {
+  --d: 3600deg;
+  transition: 0.5s, 60s linear --d;
+}
+
+.btn2:hover:before {
+  background-color: #222;
+
+}
